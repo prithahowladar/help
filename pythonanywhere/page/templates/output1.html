@@ -1,0 +1,1112 @@
+<html>
+<head>
+  <title> Table : Error</title>
+  <style>
+
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top:-2%;
+  letter-spacing:5px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:440px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: center;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+background: #2C3E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2E8B57, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2E8B57, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+opacity:0.8;
+
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+td:nth-child(3) {
+  text-align:left;
+    text-transform: uppercase;
+}
+a{
+margin-bottom:-10%;
+color:white;
+text-decoration: none;
+padding:5px;
+border: 1px solid white;
+}
+
+a:hover{
+color: #2C3E50;
+background: white;
+border-radius:2px;
+}
+  </style>
+</head>
+<body>
+<section>
+  <!--for demo wrap-->
+  <a href="{% url 'page' %}">Switch to Table: Error Count here </a><h1>Table &nbsp;: &nbsp;Error &nbsp;Type</h1>
+  <div class="tbl-header">
+<table cellpadding="0" cellspacing="0" border="0">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SenderCompID</th>
+      <th>Error Type</th>
+      <th>MsgType</th>
+      <th>OrderSide</th>
+      <th>OrderType</th>
+      <th>TimeInForce</th>
+    </tr>
+  </thead>
+
+  </table>
+  </div>
+  <div class = "tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+
+    <tr>
+      <th>0</th>
+      <td>CLIENT1</td>
+      <td>&lt; 60 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CLIENT1</td>
+      <td>&lt; 11 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CLIENT1</td>
+      <td>&lt; 55 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>CLIENT1</td>
+      <td>&lt; 100 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NaN</td>
+      <td>Message Missing</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>CLIENT1</td>
+      <td>&lt; 52 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>CLIENT1</td>
+      <td>&lt; 38 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>CLIENT1</td>
+      <td>&lt;  &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>CLIENT1</td>
+      <td>&lt; 38 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>CLIENT1</td>
+      <td>&lt; 44 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>CLIENT1</td>
+      <td>&lt; 52 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>CLIENT1</td>
+      <td>&lt; 55 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>CLIENT1</td>
+      <td>&lt; 60 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>CLIENT1</td>
+      <td>&lt; 60 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>CLIENT1</td>
+      <td>&lt; 11 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>CLIENT1</td>
+      <td>&lt; 55 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>CLIENT1</td>
+      <td>&lt; 34 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>CLIENT1</td>
+      <td>&lt; 100 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>BROKER1</td>
+      <td>&lt; 56 &gt; : Incorrect Value</td>
+      <td>8</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>BROKER1</td>
+      <td>&lt; 52 &gt; : Incorrect Value</td>
+      <td>8</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>BROKER1</td>
+      <td>&lt; 15 &gt; : Incorrect Value</td>
+      <td>8</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>BROKER1</td>
+      <td>&lt; 150 &gt; : Incorrect Value</td>
+      <td>8</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>BROKER1</td>
+      <td>&lt; 50 &gt; : Missing</td>
+      <td>8</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>CLIENT1</td>
+      <td>&lt; 11 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>CLIENT1</td>
+      <td>&lt; 21 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>CLIENT1</td>
+      <td>&lt; 38 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>CLIENT1</td>
+      <td>&lt; 44 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>CLIENT1</td>
+      <td>&lt; 52 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>CLIENT1</td>
+      <td>&lt; 55 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>CLIENT1</td>
+      <td>&lt; 56 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>CLIENT1</td>
+      <td>&lt; 60 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>CLIENT1</td>
+      <td>&lt;  &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>NaN</td>
+      <td>Message Missing</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>CLIENT1</td>
+      <td>&lt; 52 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>CLIENT1</td>
+      <td>&lt; 11 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>CLIENT1</td>
+      <td>&lt; 38 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>CLIENT1</td>
+      <td>&lt; 55 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>CLIENT1</td>
+      <td>&lt; 60 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>CLIENT1</td>
+      <td>&lt; 122 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>CLIENT1</td>
+      <td>&lt; -100 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>CLIENT1</td>
+      <td>&lt; -88 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>CLIENT1</td>
+      <td>&lt; -44 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>CLIENT1</td>
+      <td>&lt; -17 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>CLIENT1</td>
+      <td>&lt; 37 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>CLIENT1</td>
+      <td>&lt; 47 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>CLIENT1</td>
+      <td>&lt; 10SI &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>CLIENT1</td>
+      <td>&lt; 207 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>CLIENT1</td>
+      <td>&lt; 421 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>CLIENT1</td>
+      <td>&lt; 455 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>CLIENT1</td>
+      <td>&lt; 456 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>CLIENT1</td>
+      <td>&lt; 6438 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>CLIENT1</td>
+      <td>&lt; 8001 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>CLIENT1</td>
+      <td>&lt; 8002 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>CLIENT1</td>
+      <td>&lt; 627 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>CLIENT1</td>
+      <td>&lt; 628 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>CLIENT1</td>
+      <td>&lt;  &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>CLIENT1</td>
+      <td>&lt; 11 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>CLIENT1</td>
+      <td>&lt; 21 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>CLIENT1</td>
+      <td>&lt; 38 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>CLIENT1</td>
+      <td>&lt; 44 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>CLIENT1</td>
+      <td>&lt; 52 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>CLIENT1</td>
+      <td>&lt; 55 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>CLIENT1</td>
+      <td>&lt; 56 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>CLIENT1</td>
+      <td>&lt; 60 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>CLIENT1</td>
+      <td>&lt;  &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>NaN</td>
+      <td>Message Missing</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>NaN</td>
+      <td>Message Missing</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>CLIENT1</td>
+      <td>&lt; 11 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>CLIENT1</td>
+      <td>&lt; 21 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>CLIENT1</td>
+      <td>&lt; 38 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>CLIENT1</td>
+      <td>&lt; 44 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>CLIENT1</td>
+      <td>&lt; 52 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>CLIENT1</td>
+      <td>&lt; 55 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>CLIENT1</td>
+      <td>&lt; 56 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>CLIENT1</td>
+      <td>&lt; 60 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>CLIENT1</td>
+      <td>&lt;  &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>NaN</td>
+      <td>Message Missing</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>CLIENT1</td>
+      <td>&lt; 52 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>CLIENT1</td>
+      <td>&lt; 11 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>CLIENT1</td>
+      <td>&lt; 38 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>CLIENT1</td>
+      <td>&lt; 55 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>CLIENT1</td>
+      <td>&lt; 60 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>CLIENT1</td>
+      <td>&lt; 122 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>CLIENT1</td>
+      <td>&lt; -100 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>CLIENT1</td>
+      <td>&lt; -88 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>CLIENT1</td>
+      <td>&lt; -44 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>CLIENT1</td>
+      <td>&lt; -17 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>CLIENT1</td>
+      <td>&lt; 37 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>CLIENT1</td>
+      <td>&lt; 47 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>CLIENT1</td>
+      <td>&lt; 10SI &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>CLIENT1</td>
+      <td>&lt; 207 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>CLIENT1</td>
+      <td>&lt; 421 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>CLIENT1</td>
+      <td>&lt; 455 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>CLIENT1</td>
+      <td>&lt; 456 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>CLIENT1</td>
+      <td>&lt; 6438 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>CLIENT1</td>
+      <td>&lt; 8001 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>CLIENT1</td>
+      <td>&lt; 8002 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>CLIENT1</td>
+      <td>&lt; 627 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>CLIENT1</td>
+      <td>&lt; 628 &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>CLIENT1</td>
+      <td>&lt;  &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>CLIENT1</td>
+      <td>&lt; 11 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>CLIENT1</td>
+      <td>&lt; 21 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>CLIENT1</td>
+      <td>&lt; 38 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>CLIENT1</td>
+      <td>&lt; 44 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>CLIENT1</td>
+      <td>&lt; 52 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>CLIENT1</td>
+      <td>&lt; 55 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>CLIENT1</td>
+      <td>&lt; 56 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>CLIENT1</td>
+      <td>&lt; 60 &gt; : Incorrect Value</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>CLIENT1</td>
+      <td>&lt;  &gt; : Missing</td>
+      <td>D</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</section>
+<script>
+  // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+</script>
+</body>
+</html>
