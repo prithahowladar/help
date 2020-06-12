@@ -4,9 +4,12 @@ from django.shortcuts import render
 from django.shortcuts import render
 
 # Create your views here.
-def page(request):
-    return render(request, 'output2.html')
-
-def second(request):
-    return render(request, 'output1.html')
+def home(request):
+    return render(request, 'home.html')
+def count(request):
+    return render(request, 'count.html')
+def msg(request):
+    return render(request, 'msg.html')
+def flow(request):
+    return render(request, 'flow.html')
 
